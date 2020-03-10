@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 		,dryRun=false          // find unimplemented if it is true before executed false show after executed
 		,plugin= {"pretty", "html:target/html/cucumber-default-report","json:target/cucumber.json","rerun:target/failed.txt"}
 		,monochrome=true  
-		,tags= {"@smoke"}
+		,tags= {"@login"}
 		)
 
 public class SmokeRunner {

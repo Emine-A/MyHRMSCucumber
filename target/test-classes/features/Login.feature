@@ -1,16 +1,17 @@
-@sprint1 @login
+@sprint1 
 Feature: Login
-  @smoke
+ @login
   Scenario: Valid Login
     When I enter valid username and password
     And I click on Login button
     Then I successfully logged in
+  
   @regression
   Scenario: Invalid Login
     When I enter valid username and invalid password
     And I click on Login button
     Then I see error message
-  #@regression
+  @regression
   Scenario Outline: Invalid Login and message validation
     When I enter "<Username>" and "<Password>"
     And I click on Login button

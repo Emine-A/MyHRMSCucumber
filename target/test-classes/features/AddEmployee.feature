@@ -51,3 +51,6 @@ Feature: Add Employee
     #And I enter username, password and confirm password
     #When I click Save
     #Then I see Employee has been succesfully added
+    
+    Scenario: Add Employee and validate database
+    When 
